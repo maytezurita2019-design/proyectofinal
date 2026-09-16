@@ -1,0 +1,2 @@
+@props(['titulo', 'valor', 'icono', 'detalle'])
+<div class="col-12 col-sm-6 col-xl-4"><article class="card indicador h-100"><div class="card-body"><div class="d-flex justify-content-between gap-2"><h3 class="h6 text-secondary">{{ $titulo }}</h3><i class="{{ $icono }} icono-indicador" aria-hidden="true"></i></div><div class="valor-indicador">{{ $valor }}</div><p class="small text-secondary mb-0 mt-2">{{ $detalle }}</p></div></article></div>
