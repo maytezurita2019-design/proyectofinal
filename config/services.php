@@ -14,15 +14,25 @@ return [
     |
     */
 
-   'google_maps' => [
-    'key' => env('GOOGLE_MAPS_API_KEY'),
-],
 
+
+
+
+    
 'turnstile' => [
     'site_key' => env('TURNSTILE_SITE_KEY'),
     'secret_key' => env('TURNSTILE_SECRET_KEY'),
 ],
 
+'brevo' => [
+    'api_key' => env('BREVO_API_KEY'),
+    'remitente_correo' => env('BREVO_REMITENTE_CORREO'),
+    'remitente_nombre' => env(
+        'BREVO_REMITENTE_NOMBRE',
+        'SIGECOM'
+    ),
+    'admin_correo' => env('BREVO_ADMIN_CORREO'),
+],
 
     'postmark' => [
         'key' => env('POSTMARK_API_KEY'),
